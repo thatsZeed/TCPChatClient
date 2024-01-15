@@ -57,7 +57,7 @@ namespace TCPChatClient.GuiViews
             while (true)
             {
                 var client = await server.AcceptClient();                
-                AddChatMessage($"{client.UserName} Client ist beigetreten..");
+                AddChatMessage($"{client.UserName} ist beigetreten..");
                 UserListeAktualisieren();
                 _ = StartReadingMessages(client);
             }
@@ -69,10 +69,6 @@ namespace TCPChatClient.GuiViews
             {
                 // Nachricht Lesen
                 string msg = await server.ReadMessage(client);
-
-
-                // msg testen auf "CMD-name:{username}"
-                // client.UserName = username;
                 if (msg.Trim().StartsWith("CMD-name:"))
                 {
                     string username = msg.Substring(9);
@@ -84,7 +80,7 @@ namespace TCPChatClient.GuiViews
                     UserListeAktualisieren();
                 }
 
-                var echoMessage = $"[{DateTime.Now:dd.MM HH:mm}] {client.UserName}: {msg}";
+                var echoMessage = $"[{DateTime.Now:dd.MM HH:mm}] {msg.Remove(0, 9)} ist beigetreten";
                 server.SendMessageToEveryone(echoMessage);
                 AddChatMessage(echoMessage);
             }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics;
 using Terminal.Gui;
 
 namespace TCPChatClient.GuiViews
@@ -26,7 +27,6 @@ namespace TCPChatClient.GuiViews
             IsServer = isServer;
             ServerIP = serverIp;
 
-
             currentUsers = new FrameView("Userliste")
             {
                 X = 0,
@@ -52,6 +52,7 @@ namespace TCPChatClient.GuiViews
                 Width = Dim.Fill(),
                 Height = Dim.Fill()
             };
+
             lvChatLog = new ListView(Messages)
             {
                 X = 0,
@@ -78,10 +79,7 @@ namespace TCPChatClient.GuiViews
                 Height = 1
             };
 
-
             ChatFrame.Add(lvChatLog, tbChatMessage, btnSendMessage);
-
-            
 
             window.Add(ChatFrame, currentUsers);
         }
@@ -122,7 +120,7 @@ namespace TCPChatClient.GuiViews
                 }
                 catch(Exception ex)
                 {
-                    
+                    Debug.WriteLine(ex);
                 }
             });
         }

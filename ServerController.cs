@@ -13,10 +13,10 @@ namespace TCPChatClient
         public List<Client> Clients { get; set; } = new List<Client>();
         private TcpListener? listener { get; set; }
 
-        public void StartServer(System.Net.IPAddress ip, int port = 1337)
+        public void StartServer(System.Net.IPAddress ip)
         {
             // Start Server
-            listener = new TcpListener(ip, port);
+            listener = new TcpListener(ip, Convert.ToInt32(Properties.Resources.Port));
             listener.Start();
         }
 

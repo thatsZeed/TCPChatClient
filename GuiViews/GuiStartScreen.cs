@@ -67,7 +67,7 @@ namespace TCPChatClient.GuiViews
             btnConnect = new Button("Verbinden")
             {
                 X = Pos.Left(lblServerText),
-                Y = Pos.Bottom(lblServerText),
+                Y = Pos.Bottom(lblServerText) + 2,
                 Width = 12,
                 Height = 1
             };
@@ -130,7 +130,6 @@ namespace TCPChatClient.GuiViews
             }
 
             GuiClientWindow.Display(serverIp, username);
-            //GuiClientWindow.Display(username);
         }
     }
 }

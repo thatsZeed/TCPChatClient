@@ -10,7 +10,5 @@ namespace TCPChatClient.GuiViews
     public interface IGuiWindow
     {
         void Show();
-
-
     }
 }

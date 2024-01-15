@@ -32,8 +32,6 @@ namespace TCPChatClient.GuiViews
             }
         }
 
-
-
         private void BtnSendMessage_Clicked()
         {
             string? msg = tbChatMessage?.Text.ToString();
@@ -79,7 +77,6 @@ namespace TCPChatClient.GuiViews
 
         private void UserListeAktualisieren(string msg)
         {
-            // Beispiel msg = "CMD-UserList:///{user1}///{user2}///{user2}///{user2}"
             if (msg.StartsWith("CMD-UserList:"))
             {
                 Application.MainLoop.Invoke(() =>
@@ -90,7 +87,6 @@ namespace TCPChatClient.GuiViews
 
                     foreach (var client in msgGetrennt)
                     {
-                        // wenn client ist "CMD-UserList:" dann nicht Users.Add(..)
                         if (client != "CMD-UserList:")
                         {
                             Users.Add(client);

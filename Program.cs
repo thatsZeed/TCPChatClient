@@ -11,7 +11,7 @@ namespace TCPChatClient
         {
             Console.OutputEncoding = Encoding.UTF8;
             Application.Init();
-            Colors.Base.Normal = Application.Driver.MakeAttribute(Color.Green, Color.Black);
+            Colors.Base.Normal = Application.Driver.MakeAttribute(Terminal.Gui.Color.Green, Terminal.Gui.Color.Black);
 
             GuiStartScreen.Display();
 
