@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SUbWf8h5lV87FDbXnYCnEGfUnlGwzH59AgSpjUmNmzFSB4xL9gJR+vrZVN3chpHiVa7xXLvq3l19hvJcMiiO+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\49151\\Desktop\\coding\\TCPChatClient\\TCPChatClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\49151\\.nuget\\packages\\nstack.core\\1.0.3\\nstack.core.1.0.3.nupkg.sha512",
+    "C:\\Users\\49151\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\49151\\.nuget\\packages\\terminal.gui\\1.8.2\\terminal.gui.1.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}
