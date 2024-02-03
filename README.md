@@ -39,8 +39,9 @@ dotnet run
 
 ## Usage
 
-This chat client can be used for chatting between clients. The server establishes a connection to the selected port, where it waits for incoming connections. The client connects to the server via the port in order to communicate with it.
-A tcp listener then monitors the data traffic which is listened to via the port. Finally, the messages will be displayed in the chat window
+Dieser Chat Client wird benutzt um mit einem anderen Client zu chatten. 
+Dabei verbindet sich einer als Server und ein anderer als User, welche dann über den gewählten Server miteinander chatten können. 
+Es wird ein Port selbestimmter Port freigegeben, welcher dann den jeweilige Datenverkehr in der GUI wieder gibt. 
 
 ## Authors
 
