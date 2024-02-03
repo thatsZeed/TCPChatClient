@@ -1,27 +1,16 @@
 <br/>
 <p align="center">
   <h3 align="center">TCP Chatclient</h3>
-
-  <p align="center">
-    A client to chat with people
-    <br/>
-    <br/>
-  </p>
 </p>
 
 ![Forks](https://img.shields.io/github/forks/thatsZeed/TCPChatClient?style=social) ![Stargazers](https://img.shields.io/github/stars/thatsZeed/TCPChatClient?style=social) ![Issues](https://img.shields.io/github/issues/thatsZeed/TCPChatClient) 
 
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
 * [Usage](#usage)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
-
-## About The Project
-
-This project is a simple chat client, where users can communicate with other users
 
 ## Getting Started
 
